@@ -1,0 +1,110 @@
+/* HomePage.css */
+
+/* Reset and layout helpers */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Utility styles */
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-transparent {
+  color: transparent;
+}
+
+/* Navigation */
+nav {
+  background-color: rgba(31, 41, 55, 0.5);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #374151;
+}
+
+nav .text-gray-300:hover {
+  color: white;
+}
+
+/* Buttons */
+button {
+  transition: all 0.2s;
+}
+button:hover {
+  transform: scale(1.02);
+}
+
+/* Sections */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Cards */
+.card-hover:hover {
+  border-color: #a855f7;
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+  .md\:hidden {
+    display: none;
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .md\:text-4xl {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Star Ratings */
+.fill-current {
+  fill: currentColor;
+}
+.text-yellow-400 {
+  color: #facc15;
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+  border-top: 1px solid #374151;
+}
+footer a:hover {
+  color: white;
+}
+
+/* Misc */
+.text-purple-400 {
+  color: #c084fc;
+}
+.text-purple-100 {
+  color: #e9d5ff;
+}
+.text-purple-600 {
+  color: #9333ea;
+}
+.bg-purple-600 {
+  background-color: #9333ea;
+}
+.hover\:bg-purple-700:hover {
+  background-color: #7e22ce;
+}
